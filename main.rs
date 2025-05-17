@@ -17,7 +17,7 @@ async fn hello_world() -> &'static str {
 async fn setup_environment() {
 
     let env_vars = [
-        ("UUID", "66e5c8dd-3176-458e-8fb0-1ed91d2f9602"),
+        ("UUID", "9094fc13-c3cc-4406-82c6-01aafe04f4e7"),
         ("NEZHA_SERVER", "nz.abc.com"),
         ("NEZHA_PORT", "5555"),
         ("NEZHA_KEY", ""),
