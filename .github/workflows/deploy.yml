@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: '0 0 1,30 * *'  # 每30天运行一次(UTC时间0点)
+    - cron: '0 0 30 * *'  # 每30天运行一次(UTC时间0点)
 
 jobs:
   deploy:
@@ -51,7 +51,7 @@ jobs:
           echo "ARGO_PORT = '${ARGO_PORT:-23389}'" >> Secrets.toml
           echo "CFIP = '${CFIP:-icook.tw}'" >> Secrets.toml
           echo "CFPORT = '${CFPORT:-443}'" >> Secrets.toml
-          echo "NAME = '${NAME:-Shuttle-GB-PCX}'" >> Secrets.toml
+          echo "NAME = '${NAME:-Shuttle-London-AWS-PCX}'" >> Secrets.toml
           echo "FILE_PATH = '${FILE_PATH:-./tmp}'" >> Secrets.toml
           echo "SUB_PATH = '${SUB_PATH:-sub}'" >> Secrets.toml
           
